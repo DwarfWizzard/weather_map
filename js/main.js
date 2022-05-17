@@ -1,9 +1,9 @@
-var myMap;
+// Функция, выполняемая после загрузки DOM
+ var myMap;
  ymaps.ready(init)
  $( document ).ready(function() {
     let key = '9614e577db334233a7940812221105';
     let citys = ['Vladikavkaz', 'Beslan', 'Alagir', 'Ardon', 'Digora', 'Mozdok'];
-    let _json;
     // AJAX-запрос к серверу API
     citys.forEach(city => {
         let url = 'http://api.weatherapi.com/v1/current.json?key='+key+'&q='+city+'&aqi=no';
